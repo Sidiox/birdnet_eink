@@ -1,4 +1,6 @@
 # Birdnet-GO to Lilygo T5 4.7 inch S3 e-ink
+![Gif of the Lilygo T5 switching between two birds](assets/lilygo-t5-switching-detections.gif)
+
 Contains Arduino sketch and basic scripts to push [fugleramme](https://github.com/arnegiacomo/fugleramme) artwork to ESP32 based Lilygo T5 4.7 inch S3 ink display based on birdnet-go detected birds.
 Inspired by:
 https://fugleramme.arnegiacomo.dev/
