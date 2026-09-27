@@ -177,12 +177,6 @@ void connect_wifi() {
 
 void loop()
 {
-    Rect_t area = {
-        .x = 0,
-        .y = 0,
-        .width = image_width,
-        .height = image_height
-    };
     epd_poweron();
     epd_clear();
     volatile uint32_t t1 = millis();
