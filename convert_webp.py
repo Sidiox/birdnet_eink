@@ -64,6 +64,7 @@ def convert_webp_to_raw_buffer(
 
     # 4. Quantize & Pack
     pixels = list(img.getdata())
+    # scale 0-255 to 0-15 gray levels
     quantized = [(p * 15) // 255 for p in pixels]
     
     packed_data = []

@@ -67,6 +67,8 @@ def verify_header(header_file):
     if len(pixels_8bit) != total_pixels_expected:
         print(f"Warning: Reconstructed pixel count ({len(pixels_8bit)}) does not match dimensions ({total_pixels_expected})")
 
+    # `L` for 8-bit grayscale
+    # https://pillow.readthedocs.io/en/stable/handbook/concepts.html#concept-modes
     img = Image.new('L', (width, height))
     img.putdata(pixels_8bit)
     
